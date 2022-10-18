@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
+
+    <script src='jquery-3.3.1.js'></script>
+    <script src='scrollama.min.js'></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="//unpkg.com/huntjs/dist/hunt.umd.js"></script>
+
+
+</head>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Permanent Marker', cursive;
+    }
+
+    .container {
+        position: relative;
+        width: 100%;
+        height: 2500px;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 0;
+        padding-top: 55%;
+        position: sticky;
+        top: 0;
+        background-size: cover;
+        background-image: url('weeks/gif.jpg');
+    }
+
+    p {
+        width: 90%;
+        max-width: 800px;
+        margin: auto;
+        margin-bottom: 20px;
+        font-size: 18px;
+        line-height: 1.6;
+
+    }
+
+    #scroll {        
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        margin: 50px auto 50px auto;        
+    }
+  
+  .scroll__graphic {        
+        width: 100%;  
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+        left: 1em;
+        max-height: 100vh;
+        z-index: 10; 
+        background-color: white;
+    }   
+
+    .scroll__text {         
+        width: 80%;    
+        margin: auto;
+        grid-row: 1/2;
+        z-index: 100;
+    }
+    
+    .step div{
+       height: 50px;
+       margin-bottom: 10px;
+    } 
+
+    #gif-pic {
+        width: 100%;
+    }
+
+    #chart-1 {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    #chart-2 {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    svg text,  svg tspan {
+        font-family: 'Roboto Mono', monospace;
+    }
+
+</style>
+<body>
+
+    
+    <div>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut eleifend lacus. Curabitur laoreet euismod orci, sed ullamcorper leo fermentum a. Fusce dignissim, tellus sit amet fermentum maximus, enim dui malesuada magna, sit amet finibus urna quam ac mi. Nulla sed quam neque. Morbi eget felis pharetra, tincidunt dui id, auctor dui. Donec suscipit maximus fringilla. Integer imperdiet erat ac nisi volutpat cursus. Cras ac orci neque. Sed fringilla nibh in gravida bibendum. Integer maximus tristique consectetur. Fusce semper tincidunt molestie. Integer fermentum eros id luctus imperdiet. Nam euismod purus eget dui vehicula, quis dictum arcu scelerisque. Suspendisse eget risus nisl.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut eleifend lacus. Curabitur laoreet euismod orci, sed ullamcorper leo fermentum a. Fusce dignissim, tellus sit amet fermentum maximus, enim dui malesuada magna, sit amet finibus urna quam ac mi. Nulla sed quam neque. Morbi eget felis pharetra, tincidunt dui id, auctor dui. Donec suscipit maximus fringilla. Integer imperdiet erat ac nisi volutpat cursus. Cras ac orci neque. Sed fringilla nibh in gravida bibendum. Integer maximus tristique consectetur. Fusce semper tincidunt molestie. Integer fermentum eros id luctus imperdiet. Nam euismod purus eget dui vehicula, quis dictum arcu scelerisque. Suspendisse eget risus nisl.</p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut eleifend lacus. Curabitur laoreet euismod orci, sed ullamcorper leo fermentum a. Fusce dignissim, tellus sit amet fermentum maximus, enim dui malesuada magna, sit amet finibus urna quam ac mi. Nulla sed quam neque. Morbi eget felis pharetra, tincidunt dui id, auctor dui. Donec suscipit maximus fringilla. Integer imperdiet erat ac nisi volutpat cursus. Cras ac orci neque. Sed fringilla nibh in gravida bibendum. Integer maximus tristique consectetur. Fusce semper tincidunt molestie. Integer fermentum eros id luctus imperdiet. Nam euismod purus eget dui vehicula, quis dictum arcu scelerisque. Suspendisse eget risus nisl.</p>
+    
+    </div>
+
+    <div id='chart-2'></div>
+
+    <div>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut eleifend lacus. Curabitur laoreet euismod orci, sed ullamcorper leo fermentum a. Fusce dignissim, tellus sit amet fermentum maximus, enim dui malesuada magna, sit amet finibus urna quam ac mi. Nulla sed quam neque. Morbi eget felis pharetra, tincidunt dui id, auctor dui. Donec suscipit maximus fringilla. Integer imperdiet erat ac nisi volutpat cursus. Cras ac orci neque. Sed fringilla nibh in gravida bibendum. Integer maximus tristique consectetur. Fusce semper tincidunt molestie. Integer fermentum eros id luctus imperdiet. Nam euismod purus eget dui vehicula, quis dictum arcu scelerisque. Suspendisse eget risus nisl.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut eleifend lacus. Curabitur laoreet euismod orci, sed ullamcorper leo fermentum a. Fusce dignissim, tellus sit amet fermentum maximus, enim dui malesuada magna, sit amet finibus urna quam ac mi. Nulla sed quam neque. Morbi eget felis pharetra, tincidunt dui id, auctor dui. Donec suscipit maximus fringilla. Integer imperdiet erat ac nisi volutpat cursus. Cras ac orci neque. Sed fringilla nibh in gravida bibendum. Integer maximus tristique consectetur. Fusce semper tincidunt molestie. Integer fermentum eros id luctus imperdiet. Nam euismod purus eget dui vehicula, quis dictum arcu scelerisque. Suspendisse eget risus nisl.</p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut eleifend lacus. Curabitur laoreet euismod orci, sed ullamcorper leo fermentum a. Fusce dignissim, tellus sit amet fermentum maximus, enim dui malesuada magna, sit amet finibus urna quam ac mi. Nulla sed quam neque. Morbi eget felis pharetra, tincidunt dui id, auctor dui. Donec suscipit maximus fringilla. Integer imperdiet erat ac nisi volutpat cursus. Cras ac orci neque. Sed fringilla nibh in gravida bibendum. Integer maximus tristique consectetur. Fusce semper tincidunt molestie. Integer fermentum eros id luctus imperdiet. Nam euismod purus eget dui vehicula, quis dictum arcu scelerisque. Suspendisse eget risus nisl.</p>
+    
+    </div>
+
+    <div id='chart-1'></div>
+
+    <section id='scroll' class="desktop-only">
+        <div class='scroll__graphic sticky'>
+            <img id='gif-pic' src='days/gif1.jpg' />                
+        </div>
+    
+    
+        <div class='scroll__text'></div>
+    </section>
+
+    <div>
+        <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut eleifend lacus. Curabitur laoreet euismod orci, sed ullamcorper leo fermentum a. Fusce dignissim, tellus sit amet fermentum maximus, enim dui malesuada magna, sit amet finibus urna quam ac mi. Nulla sed quam neque. Morbi eget felis pharetra, tincidunt dui id, auctor dui. Donec suscipit maximus fringilla. Integer imperdiet erat ac nisi volutpat cursus. Cras ac orci neque. Sed fringilla nibh in gravida bibendum. Integer maximus tristique consectetur. Fusce semper tincidunt molestie. Integer fermentum eros id luctus imperdiet. Nam euismod purus eget dui vehicula, quis dictum arcu scelerisque. Suspendisse eget risus nisl.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut eleifend lacus. Curabitur laoreet euismod orci, sed ullamcorper leo fermentum a. Fusce dignissim, tellus sit amet fermentum maximus, enim dui malesuada magna, sit amet finibus urna quam ac mi. Nulla sed quam neque. Morbi eget felis pharetra, tincidunt dui id, auctor dui. Donec suscipit maximus fringilla. Integer imperdiet erat ac nisi volutpat cursus. Cras ac orci neque. Sed fringilla nibh in gravida bibendum. Integer maximus tristique consectetur. Fusce semper tincidunt molestie. Integer fermentum eros id luctus imperdiet. Nam euismod purus eget dui vehicula, quis dictum arcu scelerisque. Suspendisse eget risus nisl.</p>
+        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut eleifend lacus. Curabitur laoreet euismod orci, sed ullamcorper leo fermentum a. Fusce dignissim, tellus sit amet fermentum maximus, enim dui malesuada magna, sit amet finibus urna quam ac mi. Nulla sed quam neque. Morbi eget felis pharetra, tincidunt dui id, auctor dui. Donec suscipit maximus fringilla. Integer imperdiet erat ac nisi volutpat cursus. Cras ac orci neque. Sed fringilla nibh in gravida bibendum. Integer maximus tristique consectetur. Fusce semper tincidunt molestie. Integer fermentum eros id luctus imperdiet. Nam euismod purus eget dui vehicula, quis dictum arcu scelerisque. Suspendisse eget risus nisl.</p>
+    
+    </div>
+
+    
+
+<script>
+
+    var Images = {}
+    for(var i = 1; i <= 33; i++){
+        Images[i] = "weeks/gif"+i+".jpg"
+        
+        d3.select(".scroll__text")
+            .append("div")
+            .attr("class", "step")
+            .append("div")
+    }
+
+    console.log(Images)
+
+
+
+    var container = document.querySelector('#scroll');
+    var graphic = document.querySelector('#scroll > .scroll__graphic'); //container.select('.scroll__graphic');
+    var text = document.querySelector('#scroll > .scroll__text'); //container.select('.scroll__text');
+    var step = document.querySelector('#scroll > .scroll__text > .step'); // text.selectAll('.step');
+    var scroller = scrollama();
+
+    function handleStepEnter(r) {  
+        console.log(r.index) 
+        $('#gif-pic').attr("src", Images[r.index])
+    
+    }
+
+    function init() {   
+        scroller.setup({
+            container: '#scroll',
+            graphic: '.scroll__graphic',
+            text: '.scroll__text',
+            step: '.scroll__text .step',
+            offset: 0.90,
+            debug: true
+        })
+            .onStepEnter(handleStepEnter);
+    
+    }
+    init();
+
+
+     d3.xml("try2_edited.svg").then(function (data) {
+        d3.select("#chart-1")
+            .node()
+            .append(data.documentElement);
+
+    var lines = d3.select("#chart-1").selectAll("line")
+        .attr("value", function(){
+            return d3.select(this).attr("x2")})
+        .attr("x2", function(){
+            return d3.select(this).attr("x1")});   
+            
+     d3.selectAll(".circle-black")
+        .style("opacity", 0) 
+        
+
+    let myplot = document.querySelectorAll("#chart-1")
+
+    new Hunt(myplot, {
+            enter: function(plot){            
+                lines.each(function(){
+                    d3.select(this)
+                    .transition()
+                    .on("end", function(){
+                        d3.selectAll(".circle-black")
+                            .style("opacity", 1) 
+                    })
+                    .duration(2000)
+                    .attr("x2", function(d){ return d3.select(this).attr("value")
+                    
+                })                
+            }) 
+
+            },
+            leave: function(plot) {
+                lines.each(function(){
+                    d3.select(this)
+                    .transition()
+                    .on("end", function(){
+                        d3.selectAll(".circle-black")
+                            .style("opacity", 0) 
+                    })
+                    .duration(0)
+                    .attr("x2", function(d){ return d3.select(this).attr("x1")  })
+                })                
+            },  
+            persist: true,
+            throttleInterval: 800
+        });
+}) 
+
+
+d3.xml("region_timeline2.svg").then(function (data) {
+        d3.select("#chart-2")
+            .node()
+            .append(data.documentElement);
+
+        var dots = d3.select("#chart-2")
+            .selectAll("circle.stt18")
+            .attr("data-r", function(d){ return d3.select(this).attr("r")})
+            .attr("r", 1)
+
+            let myplot2 = document.querySelectorAll("#chart-2")
+
+    new Hunt(myplot2, {
+            enter: function(plot){            
+                dots.each(function(){
+                    d3.select(this)
+                    .transition()
+                    .duration(1500)
+                    .attr("r", function(d){ return d3.select(this).attr("data-r")})            
+            }) 
+
+            },
+            leave: function(plot) {
+                dots.each(function(){
+                    d3.select(this)
+                    .transition()
+                    .duration(100)
+                    .attr("r", 1)     
+            })          
+            },  
+            persist: true,
+            throttleInterval: 800
+        });
+});
+
+
+
+
+</script>
+    
+</body>
+</html>
