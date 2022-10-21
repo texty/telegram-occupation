@@ -322,13 +322,14 @@
 	.st283{fill:none;stroke:#FFFFFF;stroke-width:0.5;stroke-miterlimit:10;}
 	.st284{fill:#231F20;}
 	.st285{font-family:'Roboto Mono'; font-weight: 200; }
-	.st286{font-size:9px;}
+	.st286{font-size:9px; }
 	.st287{enable-background:new    ;}
 	.st288{font-size:7px;}
 	.st289{font-family:'Roboto Mono'; font-weight: 400;}
 	.st290{font-family:'Roboto Mono'; font-weight: 600;}
 	.st291{font-size:14px;}
 	.st292{fill:#ED1C24;}
+   .y-labels{ text-anchor: end;}
 </style>
 <g
    id="overlay">
@@ -9026,28 +9027,28 @@
 <g
    id="text">
 	<text
-   transform="matrix(1 0 0 1 71.021 534.0256)"
-   class="st284 st285 st286"
+   transform="matrix(1 0 0 1 100 534.0256)"
+   class="st284 st285 st286 y-labels"
    id="text3086">Сумська</text>
 	<text
-   transform="matrix(1 0 0 1 51.1973 495.0444)"
-   class="st284 st285 st286"
+   transform="matrix(1 0 0 1 100 495.0444)"
+   class="st284 st285 st286 y-labels"
    id="text3088">Чернігівська</text>
 	<text
-   transform="matrix(1 0 0 1 25.9727 636.024)"
-   class="st284 st285 st286"
+   transform="matrix(1 0 0 1 100 636.024)"
+   class="st284 st285 st286 y-labels"
    id="text3090">Дніпропетровська</text>
 	<text
-   transform="matrix(1 0 0 1 69.0654 451.7677)"
-   class="st284 st285 st286"
+   transform="matrix(1 0 0 1 100 451.7677)"
+   class="st284 st285 st286 y-labels"
    id="text3092">Київська</text>
 	<text
-   transform="matrix(1 0 0 1 45.8447 607.6311)"
-   class="st284 st285 st286"
+   transform="matrix(1 0 0 1 100 607.6311)"
+   class="st284 st285 st286 y-labels"
    id="text3094">Житомирська</text>
 	<text
-   transform="matrix(1 0 0 1 72.6821 695.7052)"
-   class="st284 st285 st286"
+   transform="matrix(1 0 0 1 100 695.7052)"
+   class="st284 st285 st286 y-labels"
    id="text3096">Одеська</text>
 	<text
    transform="matrix(1 0 0 1 47.7603 724.8914)"
@@ -9146,28 +9147,28 @@
      class="st284 st285 st288"
      id="tspan3142">до сьогодні</tspan></text>
 	<text
-   transform="matrix(1 0 0 1 65.8002 232.8995)"
-   class="st284 st285 st286"
+   transform="matrix(1 0 0 1 100 232.8995)"
+   class="st284 st285 st286 y-labels"
    id="text3146">Донецька</text>
 	<text
-   transform="matrix(1 0 0 1 62.2012 574.1642)"
-   class="st284 st285 st286"
+   transform="matrix(1 0 0 1 100 574.1642)"
+   class="st284 st285 st286 y-labels"
    id="text3148">Луганська</text>
 	<text
-   transform="matrix(1 0 0 1 59.459 292.9059)"
-   class="st284 st285 st286"
+   transform="matrix(1 0 0 1 100 292.9059)"
+   class="st284 st285 st286 y-labels"
    id="text3150">Харківська</text>
 	<text
-   transform="matrix(1 0 0 1 60.3687 374.5713)"
-   class="st284 st285 st286"
+   transform="matrix(1 0 0 1 100 374.5713)"
+   class="st284 st285 st286 y-labels"
    id="text3152">Запорізька</text>
 	<text
-   transform="matrix(1 0 0 1 45.9063 670.7407)"
-   class="st284 st285 st286"
+   transform="matrix(1 0 0 1 100 670.7407)"
+   class="st284 st285 st286 y-labels"
    id="text3154">Миколаївська</text>
 	<text
-   transform="matrix(1 0 0 1 57.4507 158.3765)"
-   class="st284 st285 st286"
+   transform="matrix(1 0 0 1 100 158.3765)"
+   class="st284 st285 st286 y-labels"
    id="text3156">Херсонська</text>
 	<text
    transform="matrix(1 0 0 1 132.9048 65.9456)"
