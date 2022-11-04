@@ -9027,27 +9027,27 @@
 <g
    id="text">
 	<text
-   transform="matrix(1 0 0 1 100 534.0256)"
+   transform="matrix(1 0 0 1 110 534.0256)"
    class="st284 st285 st286 y-labels"
    id="text3086">Sumy oblast</text>
 	<text
-   transform="matrix(1 0 0 1 100 495.0444)"
+   transform="matrix(1 0 0 1 110 495.0444)"
    class="st284 st285 st286 y-labels"
    id="text3088">Chernihiv oblast</text>
 	<text
-   transform="matrix(1 0 0 1 100 636.024)"
+   transform="matrix(1 0 0 1 110 636.024)"
    class="st284 st285 st286 y-labels"
    id="text3090">Dnipropetrovsk oblast</text>
 	<text
-   transform="matrix(1 0 0 1 100 451.7677)"
+   transform="matrix(1 0 0 1 110 451.7677)"
    class="st284 st285 st286 y-labels"
    id="text3092">Kyiv oblast</text>
 	<text
-   transform="matrix(1 0 0 1 100 607.6311)"
+   transform="matrix(1 0 0 1 110 607.6311)"
    class="st284 st285 st286 y-labels"
    id="text3094">Zhytomyr oblast</text>
 	<text
-   transform="matrix(1 0 0 1 100 695.7052)"
+   transform="matrix(1 0 0 1 110 695.7052)"
    class="st284 st285 st286 y-labels"
    id="text3096">Odessa Oblast</text>
 	<text
@@ -9058,12 +9058,12 @@
      y="0"
      class="st284 st285 st288"
      id="tspan3098">Not limited to</tspan><tspan
-     x="14.8"
-     y="8.4"
+     x="0"
+     y="10"
      class="st284 st285 st288"
      id="tspan3100">a particular region</tspan></text>
 	<text
-   transform="matrix(1 0 0 1 51.1944 200.6736)"
+   transform="matrix(1 0 0 1 40 200.6736)"
    class="st284 st285 st288"
    id="text3104">20 February</text>
 	<text
@@ -9147,27 +9147,27 @@
      class="st284 st285 st288"
      id="tspan3142">today</tspan></text>
 	<text
-   transform="matrix(1 0 0 1 100 232.8995)"
+   transform="matrix(1 0 0 1 110 232.8995)"
    class="st284 st285 st286 y-labels"
    id="text3146">Donetsk oblast</text>
 	<text
-   transform="matrix(1 0 0 1 100 574.1642)"
+   transform="matrix(1 0 0 1 110 574.1642)"
    class="st284 st285 st286 y-labels"
    id="text3148">Luhansk oblast</text>
 	<text
-   transform="matrix(1 0 0 1 100 292.9059)"
+   transform="matrix(1 0 0 1 110 292.9059)"
    class="st284 st285 st286 y-labels"
    id="text3150">Kharkiv oblast</text>
 	<text
-   transform="matrix(1 0 0 1 100 374.5713)"
+   transform="matrix(1 0 0 1 110 374.5713)"
    class="st284 st285 st286 y-labels"
    id="text3152">Zaporizhzhia oblast</text>
 	<text
-   transform="matrix(1 0 0 1 100 670.7407)"
+   transform="matrix(1 0 0 1 110 670.7407)"
    class="st284 st285 st286 y-labels"
    id="text3154">Mykolayiv oblast</text>
 	<text
-   transform="matrix(1 0 0 1 100 158.3765)"
+   transform="matrix(1 0 0 1 110 158.3765)"
    class="st284 st285 st286 y-labels"
    id="text3156">Kherson oblast</text>
 	<text
