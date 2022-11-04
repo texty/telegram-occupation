@@ -76,9 +76,9 @@
 <g>
 	<text transform="matrix(1 0 0 1 700 382.8115)" class="stt3 stt4 stt6">More “own” posts</text>
 </g>
-<text transform="matrix(1 0 0 1 44.089 292.7798)" class="stt3 stt4 stt5">Zaporizhzhia oblast</text>
-<text transform="matrix(1 0 0 1 44.175 236.2108)" class="stt3 stt4 stt5">Kharkiv oblast</text>
-<text transform="matrix(1 0 0 1 39.7312 183.8843)" class="stt3 stt4 stt5">Kherson oblast</text>
+<text transform="matrix(1 0 0 1 80 292.7798)" class="stt3 stt4 stt5" style='text-anchor: end'>Zaporizhzhia oblast</text>
+<text transform="matrix(1 0 0 1 80 236.2108)" class="stt3 stt4 stt5" style='text-anchor: end'>Kharkiv oblast</text>
+<text transform="matrix(1 0 0 1 80 183.8843)" class="stt3 stt4 stt5" style='text-anchor: end'>Kherson oblast</text>
 <g>
 	<defs>
 		<polygon id="SVGID_1_" points="11.5,78.1 12.5,78.1 11.5,79.1 		"/>
@@ -125,9 +125,9 @@
 <rect x="205.5" y="151.8" class="stt8" width="78.2" height="46.7"/>
 <text transform="matrix(1 0 0 1 205.5206 157.1091)"><tspan x="0" y="0" class="stt14 stt4 stt15">Novokahovskaya </tspan><tspan x="0" y="8.4" class="stt14 stt4 stt15">PRAVDA</tspan></text>
 <rect x="488.7" y="63.1" class="stt8" width="23.4" height="7.8"/>
-<text transform="matrix(1 0 0 1 489.1494 68.4791)" class="stt14 stt4 stt15">15 067</text>
+<text transform="matrix(1 0 0 1 690 68.4791)" class="stt14 stt4 stt15">15 067</text>
 <rect x="488.7" y="88.1" class="stt8" width="23.4" height="7.8"/>
-<text transform="matrix(1 0 0 1 496.1841 93.4578)" class="stt14 stt4 stt15">42</text>
+<text transform="matrix(1 0 0 1 696 93.4578)" class="stt14 stt4 stt15">42</text>
 <line class="stt16" x1="192.3" y1="288.6" x2="199.2" y2="271.7"/>
 <line class="stt16" x1="199.6" y1="179.7" x2="205.2" y2="166.2"/>
 <rect x="654.6" y="210.4" class="stt8" width="78.2" height="7.4"/>
@@ -155,8 +155,8 @@
 <text transform="matrix(1 0 0 1 446.5967 159.7532)"><tspan x="0" y="0" class="stt14 stt4 stt15">The Real  </tspan><tspan x="0" y="8.4" class="stt14 stt4 stt15">Kherson</tspan></text>
 <line class="stt16" x1="443.4" y1="174.7" x2="446.2" y2="169"/>
 <path class="stt16" d="M219.7,306.8"/>
-<circle class="stt17" cx="500.1" cy="84.9" r="13.9"/>
-<circle class="stt17" cx="500.1" cy="96.9" r="1.9"/>
+<circle class="stt17" cx="700" cy="84.9" r="13.9"/>
+<circle class="stt17" cx="700" cy="96.9" r="1.9"/>
 
 <circle class="stt18" cx='648.5' cy='232.1' r='13.7'/>
 <circle class="stt18" cx='428.1' cy='232.1' r='6.2'/>
