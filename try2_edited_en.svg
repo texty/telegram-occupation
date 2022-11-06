@@ -5,8 +5,8 @@
    version="1.1"
    x="0px"
    y="0px"
-   viewBox="0 0 786 775"
-   style="enable-background:new 0 0 786 775;"
+   viewBox="0 0 800 775"
+   style="enable-background:new 0 0 800 775;"
    xml:space="preserve"
    id="svg3195"
    sodipodi:docname="try2_edited.svg"
@@ -332,7 +332,7 @@
    .y-labels{ text-anchor: end;}
 </style>
 <g
-   id="overlay">
+   id="overlay" transform='translate(10,0)'>
 	<rect
    x="10.5"
    y="82.8"
@@ -8314,7 +8314,7 @@
 	</g>
 </g>
 <g
-   id="grid">
+   id="grid" transform='translate(10,0)'>
 	<line
    class="st282"
    x1="117.8"
@@ -9025,7 +9025,7 @@
    id="line3083" />
 </g>
 <g
-   id="text">
+   id="text" transform='translate(10,0)'>
 	<text
    transform="matrix(1 0 0 1 110 534.0256)"
    class="st284 st285 st286 y-labels"
